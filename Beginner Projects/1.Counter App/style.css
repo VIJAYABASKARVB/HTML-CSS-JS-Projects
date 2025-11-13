@@ -1,0 +1,23 @@
+.increase,.decrease,.reset{
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#todisplay{
+    font-size: 50px;
+    text-align: center;
+}
+
+.main-container{
+    margin:auto;
+    width: 50%;
+}
+
+.button-div{
+    display: flex;
+    justify-content: center;
+}
