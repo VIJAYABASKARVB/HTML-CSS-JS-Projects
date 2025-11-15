@@ -1,0 +1,43 @@
+.heading{
+    text-align: center;
+}
+
+.main-div {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+#tasklist{
+    list-style-position: inside;
+    padding-left: 0px;
+}
+
+#tasklist li {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;              
+    padding: 8px 12px;
+    background: #f3f3f3;
+    margin: 6px 0;
+    border-radius: 6px;
+}
+
+
+.list-div{
+    margin: auto;
+    width: 50%;
+}
+
+.delbtn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delbtn:hover {
+    background: darkred;
+}
