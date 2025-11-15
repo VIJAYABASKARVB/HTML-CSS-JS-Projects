@@ -7,7 +7,7 @@ function display() {
     for (let i = 0; i < tasksarr.length; i++) {
         list.innerHTML += `
             <li>
-                ${tasksarr[i]}
+                ${i + 1}. ${tasksarr[i]}
                 <button class="delbtn" data-index="${i}">Delete</button>
             </li>`;
     }
