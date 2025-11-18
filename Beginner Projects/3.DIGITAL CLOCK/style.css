@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: center;       /* vertical center */
+    height: 100vh;             /* full viewport height */
+    margin: 0;                 /* remove default body margin */
+    background-color: bisque;
+}
+
+.title-name{
+    font-size: 130px;
+}
+
+#time-display{
+    font-size: 150px;
+    margin: 2px;
+}
+
+.main-div {
+    text-align: center;
+}
