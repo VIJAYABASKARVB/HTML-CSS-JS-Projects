@@ -1,6 +1,6 @@
 const balanceEl = document.getElementById("balance");
 const incomeAmountEl = document.getElementById("income-amount");
-const expenseAmounEl = document.getElementById("expense-amount");
+const expenseAmountEl = document.getElementById("expense-amount");
 const transactionListEl = document.getElementById("transaction-list")
 const transactionFormEl = document.getElementById("transaction-form");
 const descriptionEl = document.getElementById("description");
@@ -61,9 +61,9 @@ function updateSummary(){
 
     const expense = transactions.filter((transaction) => transaction.amount < 0).reduce((acc,transaction) => acc + transaction.amount,0);
                                 
-    balanceEl.textContent = balance;
-    incomeAmountEl.textContent = income;
-    expenseAmounEl.textContent = expense;
+    balanceEl.textContent = formatCurrency(balance);
+    incomeAmountEl.textContent = formatCurrency(income);
+    expenseAmountEl.textContent = formatCurrency(expense);
 }
 
 function formatCurrency(number){
