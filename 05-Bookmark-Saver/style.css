@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: black;
+}
+
+.app-container{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+h1{
+    color: #2ecc71;
+    margin-bottom: 20px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border:2px solid #ddd; 
+}
+
+button{
+    padding: 10px;
+    background-color: #2ecc71;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: #27ae60;
+}
+
+#bookmark-list{
+    list-style: none;
+    padding: 0;
+}
+
+#bookmark-list li{
+    background-color: #f9f9f9f9;
+    padding: 10px;
+    border:1px  solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bookmark-list a{
+    color: #2ecc71;
+    text-decoration: none;
+}
+
+#bookmark-list button{
+    background-color: red;
+    padding: 5px 10px;
+}
+
+#bookmark-list button:hover{
+    background-color: #c0392b;
+} 
