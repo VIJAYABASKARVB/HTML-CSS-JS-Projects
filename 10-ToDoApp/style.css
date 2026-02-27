@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #e5e7eb;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    padding: 24px 40px;
+    border-radius: 1rem;
+    margin: 100px auto;
+    height: 500px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 5px 0px;
+}
+
+.headerSection h1{
+    font-weight: 600;
+}
+
+.headerSection .header-icons{
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerSection .header-icons i{
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.task-input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.task-input input{
+    width: 240px;
+    height: 30px;
+    border-radius: 0.4rem;
+    border: rgb(183, 183, 183) solid 1px;
+    font-size: medium;
+    padding: 20px 10px;
+}
+
+.task-input i {
+    background-color: #3b82f6;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer
+}
+
+.task-list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0px;
+    height: 280px;
+}
+
+.task input[type="checkbox"] {
+    margin-top: 7px;
+    width: 18px;
+    height: 18px;
+}
+
+.task {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 5px 0px;
+}
+
+.task label {
+    margin-left: 8px;
+}
+
+footer{
+    background-color: rgb(216, 207, 207);
+    width: 350px;
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+}
+
+.filters {
+    display: flex;
+    background-color: #ffffff;
+    padding: 5px 5px 5px 0px;
+    border-radius: 1.2rem;
+    height: 30px;
+}
+
+.filters button {
+    flex: 1;
+    margin: 0px;
+    padding: 0px;
+}
+
+.left-tasks-div{
+    text-align: center;
+    margin: 7px 0px 0px 0px;
+}
+
+footer button{
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.left-tasks{
+    font-size: small;
+}
+
+.container > * {
+    margin-left: 0;
+}

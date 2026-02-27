@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List-App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="headerSection">
+            <h1>My Tasks</h1>
+            <div class="header-icons">
+                <i class="fa-regular fa-moon"></i>
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </header>
+        <div class="task-input">
+            <input type="text" id="tasksInput" placeholder="Add a new tasks..">
+            <i class="fa-solid fa-add"></i>
+        </div>
+        <div class="task-list">
+            <div class="task">
+                <input type="checkbox" id="task1">
+                <label for="task1">Fix critical bugs in payment gateway</label>
+            </div>
+            <div class="task">
+                <input type="checkbox" id="task2">
+                <label for="task2">review the pull request</label>
+            </div>
+        </div>
+        <footer>
+            <div class="filters">
+                <button class="all-tasks">All</button>
+                <button class="active-tasks">Active</button>
+                <button class="completed-tasks">Completed</button>
+            </div>
+            <div class="left-tasks-div">
+                <p class="left-tasks">3 tasks left</p>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
