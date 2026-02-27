@@ -89,6 +89,8 @@ body{
     width: 100%;
     margin: 10px 0px;
     height: 280px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .task input[type="checkbox"] {
@@ -99,13 +101,27 @@ body{
 
 .task {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
     margin: 5px 0px;
 }
 
+.task button{
+    border: none;
+    background-color: rgb(249, 29, 29);
+    padding: 4px 8px;
+    border-radius: 1rem;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .task label {
     margin-left: 8px;
+    overflow-wrap: anywhere;
 }
 
 footer{
@@ -149,4 +165,21 @@ footer button{
 
 .container > * {
     margin-left: 0;
+}
+
+.completed label{
+    text-decoration: line-through;
+    opacity: 60%;
+}
+
+.hidden{
+    display: none;
+}
+
+.task div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
 }
